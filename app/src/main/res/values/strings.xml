@@ -2,4 +2,7 @@
     <string name="app_name">Facturation</string>
     <string name="hint_pseudo">Saisir votre pseudo SVP</string>
     <string name="hint_password">Saisir votre mot de passe SVP</string>
+    <string name="hint_nom">Saisie votre nom SVP</string>
+    <string name="hint_prenom">Saisir votre prenom SVP</string>
+    <string name="hint_email">Saisir votre Email SVP</string>
 </resources>
