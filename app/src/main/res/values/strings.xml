@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Facturation</string>
+    <string name="hint_pseudo">Saisir votre pseudo SVP</string>
+    <string name="hint_password">Saisir votre mot de passe SVP</string>
 </resources>
