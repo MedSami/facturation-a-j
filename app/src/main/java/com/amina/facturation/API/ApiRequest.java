@@ -19,12 +19,12 @@ public interface ApiRequest {
 
 
     /************** Inscription ****************/
-
-    @GET("Inscrire.php")
+    @FormUrlEncoded
+    @POST("Inscrire.php")
     Call<ResponseDataModel> Inscrire( @Field("nom") String nom,
                                        @Field("prenom") String prenom,
                                        @Field("email") String email,
                                        @Field("pseudo") String pseudo,
-                                       @Field("password") String password);
+                                       @Field("motdepasse") String password);
 
 }

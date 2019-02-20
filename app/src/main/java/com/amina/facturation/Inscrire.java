@@ -16,12 +16,21 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class Inscrire extends AppCompatActivity {
-Button btnInscririe,btnAnnuler;
+Button btnInscrire,btnAnnuler;
 EditText edtNom,edtPrenom,edtEmail,edtPseudo,edtPassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inscrire);
+
+        edtNom=findViewById(R.id.edtNom);
+        edtPrenom=findViewById(R.id.edtPrenom);
+        edtEmail=findViewById(R.id.edtEmail);
+        edtPseudo=findViewById(R.id.edtPseudo);
+        edtPassword=findViewById(R.id.edtPassword);
+        btnInscrire=findViewById(R.id.btnInscrire);
+        btnAnnuler=findViewById(R.id.btnAnnuler);
+
 
         btnAnnuler.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,21 +43,21 @@ EditText edtNom,edtPrenom,edtEmail,edtPseudo,edtPassword;
             }
         });
 
-        btnInscririe.setOnClickListener(new View.OnClickListener() {
+        btnInscrire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(edtNom.getText().equals("")){
+                if(edtNom.getText().toString().equals("")){
                     Toast.makeText(Inscrire.this, "Saisir votre nom svp", Toast.LENGTH_SHORT).show();
-                }else if(edtPrenom.getText().equals("")){
+                }else if(edtPrenom.getText().toString().equals("")){
                     Toast.makeText(Inscrire.this, "Saisir votre prenom svp", Toast.LENGTH_SHORT).show();
 
-                }else if (edtEmail.getText().equals("")){
+                }else if (edtEmail.getText().toString().equals("")){
                     Toast.makeText(Inscrire.this, "Saisir votre email svp", Toast.LENGTH_SHORT).show();
 
-                }else if(edtPseudo.getText().equals("")){
+                }else if(edtPseudo.getText().toString().equals("")){
                     Toast.makeText(Inscrire.this, "Saisir votre pseudo svp", Toast.LENGTH_SHORT).show();
 
-                }else if (edtPassword.getText().equals("")){
+                }else if (edtPassword.getText().toString().equals("")){
                     Toast.makeText(Inscrire.this, "Saisir votre mot de passe svp", Toast.LENGTH_SHORT).show();
 
                 }else {
