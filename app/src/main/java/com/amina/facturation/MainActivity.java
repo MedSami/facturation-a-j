@@ -17,8 +17,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
-EditText edtPseudo,edtPassword;
-Button btnEntrer,btnInscrire;
+    EditText edtPseudo,edtPassword;
+    Button btnEntrer,btnInscrire;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +28,8 @@ Button btnEntrer,btnInscrire;
         edtPseudo=findViewById(R.id.edtPseudo);
         btnEntrer=findViewById(R.id.btnLogin);
         btnInscrire=findViewById(R.id.btnInscrit);
-
+        edtPseudo.setText("Amina");
+        edtPassword.setText("amina123");
         btnInscrire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,13 +58,9 @@ Button btnEntrer,btnInscrire;
                             if(response.body().getResult().get(0).getPseudo().equals(edtPseudo.getText().toString())){
                                 if(response.body().getResult().get(0).getPassword().equals(edtPassword.getText().toString())){
 
-
                                         Intent intent=new Intent(MainActivity.this,Facturation.class);
                                         intent.putExtra("idUtilisateur",""+response.body().getResult().get(0).getId());
                                         startActivity(intent);
-
-
-
 
                                 }else {
                                     Toast.makeText(MainActivity.this, "Mot De Passe Incorrect", Toast.LENGTH_SHORT).show();

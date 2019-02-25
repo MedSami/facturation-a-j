@@ -8,7 +8,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitServer {
 
-    private static final String Base_Url="http://10.0.3.2/Facturation/";
+    //private static final String Base_Url="http://10.0.3.2/Facturation/";
+    private static final String Base_Url="https://poste-facturation.000webhostapp.com/Facturation/";
     private static Retrofit retrofit;
 
 
