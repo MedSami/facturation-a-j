@@ -2,17 +2,23 @@ package com.amina.facturation.Model;
 
 public class DataModel {
 int id;
-String nom, prenom, email, pseudo, password;
 
-    public DataModel(int id, String nom, String prenom, String email, String pseudo, String password) {
+String nom, prenom, email, pseudo, password,numero;
+
+
+    public DataModel(int id,String numero, String nom, String prenom, String email, String pseudo, String password) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
         this.pseudo = pseudo;
+        this.numero=numero;
         this.password = password;
     }
 
+    public String getNumero() {
+        return numero;
+    }
 
     public int getId() {
         return id;

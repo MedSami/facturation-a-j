@@ -5,4 +5,6 @@
     <string name="hint_nom">Saisie votre nom SVP</string>
     <string name="hint_prenom">Saisir votre prenom SVP</string>
     <string name="hint_email">Saisir votre Email SVP</string>
+    <string name="hint_public">Saisir nom Entreprise public</string>
+    <string name="hint_abonne">Saisir Nom client abonne</string>
 </resources>
