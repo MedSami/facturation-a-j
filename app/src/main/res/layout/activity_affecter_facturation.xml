@@ -60,8 +60,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtRemise" />
 
-    <EditText
-        android:id="@+id/edtNomProduit"
+    <Spinner
+        android:id="@+id/NomProduit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -70,8 +70,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="Saisir Nom Produit SVP"
-        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtNetAPayer" />
@@ -87,7 +85,7 @@
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtNomProduit" >
+        app:layout_constraintTop_toBottomOf="@+id/NomProduit" >
 
         <RadioButton
             android:id="@+id/rdbPublic"
@@ -137,6 +135,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rdbClient" />
+ <EditText
+        android:id="@+id/edtrdbMatricule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtrdbClient" />
 
     <Button
         android:id="@+id/btnValider"
@@ -150,6 +163,6 @@
         android:text="Envoyer Facture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtrdbClient" />
+        app:layout_constraintTop_toBottomOf="@+id/edtrdbMatricule" />
 </android.support.constraint.ConstraintLayout>
 </android.support.v4.widget.NestedScrollView>

@@ -42,7 +42,9 @@ public interface ApiRequest {
                                       @Field("entreprise_public") String entreprise_public,
                                       @Field("client_abonne") String clien_abonne,
                                       @Field("nom_produit") String nom_produit,
-                                      @Field("num_facture") String num_facture);
+                                      @Field("num_facture") String num_facture,
+                                      @Field("matricule") String matricule
+                                        );
 
 
 
