@@ -43,7 +43,9 @@ public interface ApiRequest {
                                       @Field("client_abonne") String clien_abonne,
                                       @Field("nom_produit") String nom_produit,
                                       @Field("num_facture") String num_facture,
-                                      @Field("matricule") String matricule
+                                      @Field("nomClient") String nom_client,
+                                      @Field("matricule") String matricule,
+                                      @Field("id_directeur") String id_directeur
                                         );
 
 
